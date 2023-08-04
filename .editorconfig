@@ -1,0 +1,43 @@
+# Top level EditorConfig
+root = true
+
+# Global Settings
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+indent_style = space
+indent_size = 4
+
+#Source Files
+[*.rs]
+indent_style = space
+indent_size = 4
+
+# Unix-like Scripts
+[*.{sh,bash,fish,zsh}]
+end_of_line = lf
+
+# Windows Scripts
+[*.{bat,cmd,ps1}]
+end_of_line = crlf
+
+# JSON Files
+[*.json]
+indent_style = space
+indent_size = 4
+
+# Configuration Files
+[*.{toml,xml,yaml,yml,config}]
+indent_style = space
+indent_size = 2
+
+# Web Files
+[*.{htm,html,js,jsm,ts,tsx,css,sass,scss,less,pcss,svg,vue}]
+indent_style = space
+indent_size = 2
+
+# Text Files
+[*.{txt,md}]
+indent_style = space
+indent_size = 4
